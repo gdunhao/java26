@@ -8,10 +8,9 @@ import javax.crypto.spec.HKDFParameterSpec;
 
 /**
  * ╔══════════════════════════════════════════════════════════════════════════════╗
- * ║  JEP 478: Key Derivation Function API (Preview)                            ║
- * ║  Status: PREVIEW in JDK 26                                                 ║
- * ║  Spec: https://openjdk.org/jeps/478                                        ║
- * ║  Requires: --enable-preview                                                ║
+ * ║  JEP 510: Key Derivation Function API                                      ║
+ * ║  Status: FINAL in JDK 26                                                   ║
+ * ║  Spec: https://openjdk.org/jeps/510                                        ║
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
  * WHAT THIS FEATURE DOES
@@ -59,7 +58,7 @@ public class KeyDerivationDemo {
 
     public static void main(String[] args) throws Exception {
         IO.println("╔═══════════════════════════════════════════════════╗");
-        IO.println("║  JEP 478 — Key Derivation Function API (Preview) ║");
+        IO.println("║  JEP 510 — Key Derivation Function API           ║");
         IO.println("╚═══════════════════════════════════════════════════╝");
         IO.println();
 

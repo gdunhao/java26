@@ -4,9 +4,9 @@ import module java.base;
 
 /**
  * ╔══════════════════════════════════════════════════════════════════════════════╗
- * ║  JEP 494: Module Import Declarations                                       ║
+ * ║  JEP 511: Module Import Declarations                                       ║
  * ║  Status: FINAL in JDK 26                                                   ║
- * ║  Spec: https://openjdk.org/jeps/494                                        ║
+ * ║  Spec: https://openjdk.org/jeps/511                                        ║
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
  * WHAT THIS FEATURE DOES
@@ -72,7 +72,7 @@ public class ModuleImportDemo {
 
     public static void main(String[] args) {
         IO.println("╔═══════════════════════════════════════════════════╗");
-        IO.println("║  JEP 494 — Module Import Declarations            ║");
+        IO.println("║  JEP 511 — Module Import Declarations            ║");
         IO.println("╚═══════════════════════════════════════════════════╝");
         IO.println();
 

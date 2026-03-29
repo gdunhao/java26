@@ -2,9 +2,9 @@ package org.example.preview;
 
 /**
  * ╔══════════════════════════════════════════════════════════════════════════════╗
- * ║  JEP 488: Primitive Types in Patterns, instanceof, and switch (Preview)    ║
- * ║  Status: PREVIEW in JDK 26                                                 ║
- * ║  Spec: https://openjdk.org/jeps/488                                        ║
+ * ║  JEP 530: Primitive Types in Patterns, instanceof, and switch (Preview)    ║
+ * ║  Status: PREVIEW in JDK 26 (Fourth Preview)                                ║
+ * ║  Spec: https://openjdk.org/jeps/530                                        ║
  * ║  Requires: --enable-preview                                                ║
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
@@ -57,7 +57,7 @@ public class PrimitivePatternsDemo {
 
     public static void main(String[] args) {
         IO.println("╔═══════════════════════════════════════════════════╗");
-        IO.println("║  JEP 488 — Primitive Types in Patterns (Preview) ║");
+        IO.println("║  JEP 530 — Primitive Types in Patterns (Preview) ║");
         IO.println("╚═══════════════════════════════════════════════════╝");
         IO.println();
 

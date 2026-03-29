@@ -2,9 +2,9 @@ package org.example.standard;
 
 /**
  * ╔══════════════════════════════════════════════════════════════════════════════╗
- * ║  JEP 487: Scoped Values                                                    ║
+ * ║  JEP 506: Scoped Values                                                    ║
  * ║  Status: FINAL in JDK 26                                                   ║
- * ║  Spec: https://openjdk.org/jeps/487                                        ║
+ * ║  Spec: https://openjdk.org/jeps/506                                        ║
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
  * WHAT THIS FEATURE DOES
@@ -57,7 +57,7 @@ public class ScopedValuesDemo {
 
     public static void main(String[] args) throws Exception {
         IO.println("╔═══════════════════════════════════════════════════╗");
-        IO.println("║  JEP 487 — Scoped Values                        ║");
+        IO.println("║  JEP 506 — Scoped Values                        ║");
         IO.println("╚═══════════════════════════════════════════════════╝");
         IO.println();
 

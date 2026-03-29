@@ -2,9 +2,9 @@ package org.example.standard;
 
 /**
  * ╔══════════════════════════════════════════════════════════════════════════════╗
- * ║  JEP 495: Simple Source Files and Instance Main Methods                     ║
+ * ║  JEP 512: Compact Source Files and Instance Main Methods                    ║
  * ║  Status: FINAL in JDK 26                                                   ║
- * ║  Spec: https://openjdk.org/jeps/495                                        ║
+ * ║  Spec: https://openjdk.org/jeps/512                                        ║
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
  * WHAT THIS FEATURE DOES
@@ -16,12 +16,12 @@ package org.example.standard;
  *      `public`, `static`, or accept a `String[]` parameter.
  *
  *   2. Implicit classes — A Java source file can omit the enclosing class
- *      declaration entirely. The compiler creates an "implicit class" behind
- *      the scenes.
+ *      declaration entirely. The compiler creates an "implicitly declared
+ *      class" behind the scenes.
  *
  *   3. Automatic `IO` class — The new `java.io.IO` class provides convenient
  *      `println`, `print`, and `readln` methods that are auto-imported in
- *      simple source files.
+ *      compact source files.
  *
  * WHY IT MATTERS
  * ──────────────
@@ -80,7 +80,7 @@ public class SimpleSourceFileDemo {
         //   IO.print(Object)    — prints without newline
         //   IO.readln(String)   — reads a line with a prompt
         IO.println("╔═══════════════════════════════════════════════════╗");
-        IO.println("║  JEP 495 — Simple Source Files & Instance Main   ║");
+        IO.println("║  JEP 512 — Compact Source Files & Instance Main  ║");
         IO.println("╚═══════════════════════════════════════════════════╝");
         IO.println();
 

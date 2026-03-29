@@ -3,7 +3,7 @@ package org.example.standard;
 /**
  * ╔══════════════════════════════════════════════════════════════════════════════╗
  * ║  Flexible Constructor Bodies — Real-World Use Cases                         ║
- * ║  Practical examples where JEP 492 gives you a real advantage                ║
+ * ║  Practical examples where JEP 513 gives you a real advantage                ║
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
  * These examples show REAL scenarios where placing statements before super()
@@ -12,8 +12,8 @@ package org.example.standard;
  *
  * REFERENCES
  * ──────────
- *   • JEP 492 — Flexible Constructor Bodies:
- *       https://openjdk.org/jeps/492
+ *   • JEP 513 — Flexible Constructor Bodies:
+ *       https://openjdk.org/jeps/513
  *
  * PATTERNS DEMONSTRATED
  * ─────────────────────

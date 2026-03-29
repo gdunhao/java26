@@ -1,6 +1,6 @@
 # ☕ Java 26 Feature Demos
 
-A comprehensive collection of runnable demos showcasing **every major feature** in **JDK 26** (released September 2025). Each demo is a self-contained Java class with extensive Javadoc documentation explaining the feature, its motivation, and usage patterns.
+A comprehensive collection of runnable demos showcasing **every major feature** in **JDK 26** (released March 2026). Each demo is a self-contained Java class with extensive Javadoc documentation explaining the feature, its motivation, and usage patterns.
 
 ## 📋 Prerequisites
 
@@ -45,28 +45,28 @@ mvn compile exec:exec -Dexec.mainClass=<fully.qualified.ClassName>
 
 | # | JEP | Feature | Demo Class | Description |
 |---|-----|---------|------------|-------------|
-| 1 | [JEP 495](https://openjdk.org/jeps/495) | **Simple Source Files & Instance Main** | [`o.e.standard.SimpleSourceFileDemo`](#1-jep-495--simple-source-files--instance-main-methods) | Write `void main()` — no `public`, `static`, or `String[]` needed |
-| 2 | [JEP 494](https://openjdk.org/jeps/494) | **Module Import Declarations** | [`o.e.standard.ModuleImportDemo`](#2-jep-494--module-import-declarations) | `import module java.base;` replaces dozens of imports |
-| 3 | [JEP 492](https://openjdk.org/jeps/492) | **Flexible Constructor Bodies** | [`o.e.standard.FlexibleConstructorDemo`](#3-jep-492--flexible-constructor-bodies) | Statements before `super()` and `this()` |
+| 1 | [JEP 512](https://openjdk.org/jeps/512) | **Compact Source Files & Instance Main** | [`o.e.standard.SimpleSourceFileDemo`](#1-jep-512--compact-source-files--instance-main-methods) | Write `void main()` — no `public`, `static`, or `String[]` needed |
+| 2 | [JEP 511](https://openjdk.org/jeps/511) | **Module Import Declarations** | [`o.e.standard.ModuleImportDemo`](#2-jep-511--module-import-declarations) | `import module java.base;` replaces dozens of imports |
+| 3 | [JEP 513](https://openjdk.org/jeps/513) | **Flexible Constructor Bodies** | [`o.e.standard.FlexibleConstructorDemo`](#3-jep-513--flexible-constructor-bodies) | Statements before `super()` and `this()` |
 | 4 | [JEP 485](https://openjdk.org/jeps/485) | **Stream Gatherers** | [`o.e.standard.StreamGatherersDemo`](#4-jep-485--stream-gatherers) | Custom intermediate stream operations |
 | 5 | [JEP 484](https://openjdk.org/jeps/484) | **Class-File API** | [`o.e.standard.ClassFileApiDemo`](#5-jep-484--class-file-api) | Read, write, and transform `.class` files natively |
-| 6 | [JEP 499](https://openjdk.org/jeps/499) | **Structured Concurrency** | [`o.e.standard.StructuredConcurrencyDemo`](#6-jep-499--structured-concurrency) | Fork/join concurrent tasks as a unit of work |
-| 7 | [JEP 487](https://openjdk.org/jeps/487) | **Scoped Values** | [`o.e.standard.ScopedValuesDemo`](#7-jep-487--scoped-values) | Thread-safe, immutable alternative to `ThreadLocal` |
-| 8 | [JEP 496](https://openjdk.org/jeps/496) | **Quantum-Resistant ML-KEM** | [`o.e.standard.QuantumKemDemo`](#8-jep-496--quantum-resistant-ml-kem) | Post-quantum key encapsulation (FIPS 203) |
-| 9 | [JEP 497](https://openjdk.org/jeps/497) | **Quantum-Resistant ML-DSA** | [`o.e.standard.QuantumDsaDemo`](#9-jep-497--quantum-resistant-ml-dsa) | Post-quantum digital signatures (FIPS 204) |
+| 6 | [JEP 506](https://openjdk.org/jeps/506) | **Scoped Values** | [`o.e.standard.ScopedValuesDemo`](#6-jep-506--scoped-values) | Thread-safe, immutable alternative to `ThreadLocal` |
+| 7 | [JEP 496](https://openjdk.org/jeps/496) | **Quantum-Resistant ML-KEM** | [`o.e.standard.QuantumKemDemo`](#7-jep-496--quantum-resistant-ml-kem) | Post-quantum key encapsulation (FIPS 203) |
+| 8 | [JEP 497](https://openjdk.org/jeps/497) | **Quantum-Resistant ML-DSA** | [`o.e.standard.QuantumDsaDemo`](#8-jep-497--quantum-resistant-ml-dsa) | Post-quantum digital signatures (FIPS 204) |
+| 9 | [JEP 510](https://openjdk.org/jeps/510) | **Key Derivation Function API** | [`o.e.preview.KeyDerivationDemo`](#9-jep-510--key-derivation-function-api) | HKDF key derivation via `javax.crypto.KDF` |
 
 ### 🔬 Preview Features (require `--enable-preview`)
 
 | # | JEP | Feature | Demo Class | Description |
 |---|-----|---------|------------|-------------|
-| 10 | [JEP 488](https://openjdk.org/jeps/488) | **Primitive Types in Patterns** | [`o.e.preview.PrimitivePatternsDemo`](#10-jep-488--primitive-types-in-patterns) | Pattern match on `int`, `double`, `boolean` in switch |
-| 11 | [JEP 478](https://openjdk.org/jeps/478) | **Key Derivation Function API** | [`o.e.preview.KeyDerivationDemo`](#11-jep-478--key-derivation-function-api) | HKDF key derivation via `javax.crypto.KDF` |
+| 10 | [JEP 530](https://openjdk.org/jeps/530) | **Primitive Types in Patterns** | [`o.e.preview.PrimitivePatternsDemo`](#10-jep-530--primitive-types-in-patterns) | Pattern match on `int`, `double`, `boolean` in switch |
+| 11 | [JEP 525](https://openjdk.org/jeps/525) | **Structured Concurrency** | [`o.e.standard.StructuredConcurrencyDemo`](#11-jep-525--structured-concurrency) | Fork/join concurrent tasks as a unit of work |
 
 ### 🧪 Incubator Features (require `--add-modules`)
 
 | # | JEP | Feature | Demo Class | Description |
 |---|-----|---------|------------|-------------|
-| 12 | [JEP 489](https://openjdk.org/jeps/489) | **Vector API** | [`o.e.incubator.VectorApiDemo`](#12-jep-489--vector-api) | SIMD computations via `jdk.incubator.vector` |
+| 12 | [JEP 529](https://openjdk.org/jeps/529) | **Vector API** | [`o.e.incubator.VectorApiDemo`](#12-jep-529--vector-api) | SIMD computations via `jdk.incubator.vector` |
 
 ### ⚙️ VM/Runtime Improvements
 
@@ -78,7 +78,7 @@ mvn compile exec:exec -Dexec.mainClass=<fully.qualified.ClassName>
 
 ## 🔍 Detailed Feature Descriptions
 
-### 1. JEP 495 — Simple Source Files & Instance Main Methods
+### 1. JEP 512 — Compact Source Files & Instance Main Methods
 
 ```bash
 java --enable-preview --add-modules jdk.incubator.vector \
@@ -99,7 +99,7 @@ The JVM launch protocol accepts instance `main()` methods with relaxed visibilit
 
 ---
 
-### 2. JEP 494 — Module Import Declarations
+### 2. JEP 511 — Module Import Declarations
 
 ```bash
 java --enable-preview --add-modules jdk.incubator.vector \
@@ -116,7 +116,7 @@ import module java.base;  // Replaces 20+ import statements!
 
 ---
 
-### 3. JEP 492 — Flexible Constructor Bodies
+### 3. JEP 513 — Flexible Constructor Bodies
 
 ```bash
 java --enable-preview --add-modules jdk.incubator.vector \
@@ -178,31 +178,7 @@ The demo shows: generating a class from scratch, parsing and inspecting it, and 
 
 ---
 
-### 6. JEP 499 — Structured Concurrency
-
-```bash
-java --enable-preview --add-modules jdk.incubator.vector \
-  -cp target/classes org.example.standard.StructuredConcurrencyDemo
-```
-
-**What changed:** `StructuredTaskScope` treats groups of concurrent tasks as a single unit:
-
-```java
-try (var scope = StructuredTaskScope.open()) {
-    var user  = scope.fork(() -> fetchUser());
-    var order = scope.fork(() -> fetchOrder());
-    scope.join();         // Wait for all
-    use(user.get(), order.get());
-}   // All tasks guaranteed complete here
-```
-
-Key joiners: `awaitAll()`, `awaitAllSuccessfulOrThrow()`, `anySuccessfulOrThrow()`.
-
-**Best for:** Concurrent service calls, fan-out/fan-in, replacing `ExecutorService`.
-
----
-
-### 7. JEP 487 — Scoped Values
+### 6. JEP 506 — Scoped Values
 
 ```bash
 java --enable-preview --add-modules jdk.incubator.vector \
@@ -230,7 +206,7 @@ ScopedValue.where(USER, "alice").run(() -> {
 
 ---
 
-### 8. JEP 496 — Quantum-Resistant ML-KEM
+### 7. JEP 496 — Quantum-Resistant ML-KEM
 
 ```bash
 java --enable-preview --add-modules jdk.incubator.vector \
@@ -245,7 +221,7 @@ The demo shows the complete workflow: key generation → encapsulation → decap
 
 ---
 
-### 9. JEP 497 — Quantum-Resistant ML-DSA
+### 8. JEP 497 — Quantum-Resistant ML-DSA
 
 ```bash
 java --enable-preview --add-modules jdk.incubator.vector \
@@ -258,7 +234,29 @@ java --enable-preview --add-modules jdk.incubator.vector \
 
 ---
 
-### 10. JEP 488 — Primitive Types in Patterns
+### 9. JEP 510 — Key Derivation Function API
+
+```bash
+java --enable-preview --add-modules jdk.incubator.vector \
+  -cp target/classes org.example.preview.KeyDerivationDemo
+```
+
+**What changed:** The new `javax.crypto.KDF` class provides HKDF (RFC 5869) key derivation:
+
+```java
+KDF hkdf = KDF.getInstance("HKDF-SHA256");
+SecretKey key = hkdf.deriveKey("AES", HKDFParameterSpec
+    .ofExtract().addIKM(ikm).addSalt(salt)
+    .thenExpand(info, 32));
+```
+
+The demo shows: extract-then-expand, expand-only, and deriving multiple keys from one shared secret.
+
+**Status:** Final (since JDK 25).
+
+---
+
+### 10. JEP 530 — Primitive Types in Patterns
 
 ```bash
 java --enable-preview --add-modules jdk.incubator.vector \
@@ -277,33 +275,37 @@ switch (value) {
 
 The demo covers: primitive switch on Object, guarded primitive patterns, record destructuring with primitives, narrowing conversions, and exhaustive boolean switch.
 
-**Status:** Preview — requires `--enable-preview`.
+**Status:** Fourth Preview — requires `--enable-preview`.
 
 ---
 
-### 11. JEP 478 — Key Derivation Function API
+### 11. JEP 525 — Structured Concurrency
 
 ```bash
 java --enable-preview --add-modules jdk.incubator.vector \
-  -cp target/classes org.example.preview.KeyDerivationDemo
+  -cp target/classes org.example.standard.StructuredConcurrencyDemo
 ```
 
-**What changed:** The new `javax.crypto.KDF` class provides HKDF (RFC 5869) key derivation:
+**What changed:** `StructuredTaskScope` treats groups of concurrent tasks as a single unit:
 
 ```java
-KDF hkdf = KDF.getInstance("HKDF-SHA256");
-SecretKey key = hkdf.deriveKey("AES", HKDFParameterSpec
-    .ofExtract().addIKM(ikm).addSalt(salt)
-    .thenExpand(info, 32));
+try (var scope = StructuredTaskScope.open()) {
+    var user  = scope.fork(() -> fetchUser());
+    var order = scope.fork(() -> fetchOrder());
+    scope.join();         // Wait for all
+    use(user.get(), order.get());
+}   // All tasks guaranteed complete here
 ```
 
-The demo shows: extract-then-expand, expand-only, and deriving multiple keys from one shared secret.
+Key joiners: `awaitAll()`, `awaitAllSuccessfulOrThrow()`, `allSuccessfulOrThrow()`, `anySuccessfulOrThrow()`, `allUntil(Predicate)`.
 
-**Status:** Preview — requires `--enable-preview`.
+**Status:** Sixth Preview — requires `--enable-preview`.
+
+**Best for:** Concurrent service calls, fan-out/fan-in, replacing `ExecutorService`.
 
 ---
 
-### 12. JEP 489 — Vector API
+### 12. JEP 529 — Vector API
 
 ```bash
 java --enable-preview --add-modules jdk.incubator.vector \
@@ -314,7 +316,7 @@ java --enable-preview --add-modules jdk.incubator.vector \
 
 The demo covers: element-wise operations, reductions, conditional/masked operations, dot products, and a scalar-vs-SIMD comparison.
 
-**Status:** Incubator (9th round) — requires `--add-modules jdk.incubator.vector`.
+**Status:** Incubator (11th round) — requires `--add-modules jdk.incubator.vector`.
 
 ---
 
@@ -337,12 +339,13 @@ These JEPs are important but don't have direct demo code:
 
 | JEP | Feature | Notes |
 |-----|---------|-------|
-| [JEP 483](https://openjdk.org/jeps/483) | **Ahead-of-Time Class Loading & Linking** | JVM startup optimization. Use `java -XX:AOTCache` flags. |
-| [JEP 490](https://openjdk.org/jeps/490) | **ZGC: Remove Non-Generational Mode** | ZGC is now always generational. Old `-XX:-ZGenerational` flag removed. |
-| [JEP 486](https://openjdk.org/jeps/486) | **Permanently Disable Security Manager** | `System.setSecurityManager()` throws `UnsupportedOperationException`. |
-| [JEP 472](https://openjdk.org/jeps/472) | **Prepare to Restrict JNI** | Warns on JNI usage without `--enable-native-access`. |
-| [JEP 498](https://openjdk.org/jeps/498) | **Warn on sun.misc.Unsafe Memory Access** | Warns when using deprecated `Unsafe` memory methods. |
-| [JEP 493](https://openjdk.org/jeps/493) | **Linking Run-Time Images without JMODs** | `jlink` can now create images from just the run-time image. |
+| [JEP 500](https://openjdk.org/jeps/500) | **Prepare to Make Final Mean Final** | Warns at compile time about reflective access to final fields. |
+| [JEP 504](https://openjdk.org/jeps/504) | **Remove the Applet API** | The long-deprecated `java.applet` package is removed. |
+| [JEP 516](https://openjdk.org/jeps/516) | **Ahead-of-Time Object Caching with Any GC** | Extends AOT caching to work with all GC algorithms. |
+| [JEP 517](https://openjdk.org/jeps/517) | **HTTP/3 for the HTTP Client API** | The `java.net.http.HttpClient` now supports HTTP/3 (QUIC). |
+| [JEP 522](https://openjdk.org/jeps/522) | **G1 GC: Improve Throughput by Reducing Synchronization** | G1 garbage collector performance improvements. |
+| [JEP 526](https://openjdk.org/jeps/526) | **Lazy Constants (Second Preview)** | Lazily-initialized constant values for performance. |
+| [JEP 524](https://openjdk.org/jeps/524) | **PEM Encodings of Cryptographic Objects (Second Preview)** | Read/write PEM-encoded keys and certificates natively. |
 
 ---
 
@@ -355,20 +358,20 @@ java26/
 └── src/main/java/org/example/
     ├── Main.java                              # Original hello-world
     ├── standard/                              # Final/standard features
-    │   ├── SimpleSourceFileDemo.java          # JEP 495
-    │   ├── ModuleImportDemo.java              # JEP 494
-    │   ├── FlexibleConstructorDemo.java       # JEP 492
+    │   ├── SimpleSourceFileDemo.java          # JEP 512
+    │   ├── ModuleImportDemo.java              # JEP 511
+    │   ├── FlexibleConstructorDemo.java       # JEP 513
     │   ├── StreamGatherersDemo.java           # JEP 485
     │   ├── ClassFileApiDemo.java              # JEP 484
-    │   ├── StructuredConcurrencyDemo.java     # JEP 499
-    │   ├── ScopedValuesDemo.java              # JEP 487
+    │   ├── StructuredConcurrencyDemo.java     # JEP 525
+    │   ├── ScopedValuesDemo.java              # JEP 506
     │   ├── QuantumKemDemo.java                # JEP 496
     │   └── QuantumDsaDemo.java                # JEP 497
     ├── preview/                               # Preview features
-    │   ├── PrimitivePatternsDemo.java         # JEP 488
-    │   └── KeyDerivationDemo.java             # JEP 478
+    │   ├── PrimitivePatternsDemo.java         # JEP 530
+    │   └── KeyDerivationDemo.java             # JEP 510
     ├── incubator/                             # Incubator features
-    │   └── VectorApiDemo.java                 # JEP 489
+    │   └── VectorApiDemo.java                 # JEP 529
     └── vm/                                    # VM/runtime improvements
         └── VirtualThreadSyncDemo.java         # JEP 491
 ```

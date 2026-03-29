@@ -10,10 +10,10 @@ import jdk.incubator.vector.*;
  *
  * REFERENCES
  * ──────────
- *   • JEP 489 — Vector API (Ninth Incubator):
- *       https://openjdk.org/jeps/489
+ *   • JEP 529 — Vector API (Eleventh Incubator):
+ *       https://openjdk.org/jeps/529
  *   • Javadoc — jdk.incubator.vector package:
- *       https://docs.oracle.com/en/java/javase/24/docs/api/jdk.incubator.vector/jdk/incubator/vector/package-summary.html
+ *       https://docs.oracle.com/en/java/javase/26/docs/api/jdk.incubator.vector/jdk/incubator/vector/package-summary.html
  *   • JEP 426 — Vector API (Fourth Incubator, detailed design):
  *       https://openjdk.org/jeps/426
  *

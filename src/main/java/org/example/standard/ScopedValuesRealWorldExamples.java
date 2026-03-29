@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * ╔══════════════════════════════════════════════════════════════════════════════╗
  * ║  Scoped Values — Real-World Use Cases                                       ║
- * ║  Practical examples where JEP 487 gives you a real advantage                ║
+ * ║  Practical examples where JEP 506 gives you a real advantage                ║
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
  * These examples show REAL scenarios where ScopedValue replaces ThreadLocal
@@ -18,8 +18,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  *
  * REFERENCES
  * ──────────
- *   • JEP 487 — Scoped Values:
- *       https://openjdk.org/jeps/487
+ *   • JEP 506 — Scoped Values:
+ *       https://openjdk.org/jeps/506
  *   • JEP 444 — Virtual Threads:
  *       https://openjdk.org/jeps/444
  *

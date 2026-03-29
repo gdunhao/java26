@@ -5,7 +5,7 @@ import module java.base;
 /**
  * ╔══════════════════════════════════════════════════════════════════════════════╗
  * ║  Module Import Declarations — Real-World Use Cases                          ║
- * ║  Practical examples where JEP 494 gives you a real advantage                ║
+ * ║  Practical examples where JEP 511 gives you a real advantage                ║
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
  * These examples show REAL scenarios where `import module java.base` replaces
@@ -14,8 +14,8 @@ import module java.base;
  *
  * REFERENCES
  * ──────────
- *   • JEP 494 — Module Import Declarations:
- *       https://openjdk.org/jeps/494
+ *   • JEP 511 — Module Import Declarations:
+ *       https://openjdk.org/jeps/511
  *
  * PATTERNS DEMONSTRATED
  * ─────────────────────

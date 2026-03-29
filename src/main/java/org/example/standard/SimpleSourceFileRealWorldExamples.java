@@ -2,8 +2,8 @@ package org.example.standard;
 
 /**
  * ╔══════════════════════════════════════════════════════════════════════════════╗
- * ║  Simple Source Files & Instance Main — Real-World Use Cases                  ║
- * ║  Practical examples where JEP 495 gives you a real advantage                ║
+ * ║  Compact Source Files & Instance Main — Real-World Use Cases                ║
+ * ║  Practical examples where JEP 512 gives you a real advantage                ║
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
  * These examples show REAL scenarios where simplified Java programs
@@ -12,8 +12,8 @@ package org.example.standard;
  *
  * REFERENCES
  * ──────────
- *   • JEP 495 — Simple Source Files and Instance Main Methods:
- *       https://openjdk.org/jeps/495
+ *   • JEP 512 — Compact Source Files and Instance Main Methods:
+ *       https://openjdk.org/jeps/512
  *
  * PATTERNS DEMONSTRATED
  * ─────────────────────
@@ -46,7 +46,7 @@ public class SimpleSourceFileRealWorldExamples {
 
     void main() {
         IO.println("╔═══════════════════════════════════════════════════════╗");
-        IO.println("║  Simple Source Files — Real-World Use Cases           ║");
+        IO.println("║  Compact Source Files — Real-World Use Cases      ║");
         IO.println("╚═══════════════════════════════════════════════════════╝");
         IO.println();
 

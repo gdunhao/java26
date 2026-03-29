@@ -22,14 +22,14 @@ import java.util.Base64;
  *
  * REFERENCES
  * ──────────
- *   • JEP 478 — Key Derivation Function API (Preview):
- *       https://openjdk.org/jeps/478
+ *   • JEP 510 — Key Derivation Function API:
+ *       https://openjdk.org/jeps/510
  *   • HKDF — RFC 5869 (HMAC-based Extract-and-Expand KDF):
  *       https://datatracker.ietf.org/doc/html/rfc5869
  *   • NIST SP 800-56C Rev. 2 — Key-Derivation Methods:
  *       https://csrc.nist.gov/publications/detail/sp/800-56c/rev-2/final
- *   • Javadoc — javax.crypto.KDF (JDK 24):
- *       https://docs.oracle.com/en/java/javase/24/docs/api/java.base/javax/crypto/KDF.html
+ *   • Javadoc — javax.crypto.KDF (JDK 26):
+ *       https://docs.oracle.com/en/java/javase/26/docs/api/java.base/javax/crypto/KDF.html
  *
  * PATTERNS DEMONSTRATED
  * ─────────────────────

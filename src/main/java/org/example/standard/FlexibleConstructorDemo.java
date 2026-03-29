@@ -2,9 +2,9 @@ package org.example.standard;
 
 /**
  * ╔══════════════════════════════════════════════════════════════════════════════╗
- * ║  JEP 492: Flexible Constructor Bodies                                      ║
+ * ║  JEP 513: Flexible Constructor Bodies                                      ║
  * ║  Status: FINAL in JDK 26                                                   ║
- * ║  Spec: https://openjdk.org/jeps/492                                        ║
+ * ║  Spec: https://openjdk.org/jeps/513                                        ║
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
  * WHAT THIS FEATURE DOES
@@ -62,7 +62,7 @@ public class FlexibleConstructorDemo {
 
     public static void main(String[] args) {
         IO.println("╔═══════════════════════════════════════════════════╗");
-        IO.println("║  JEP 492 — Flexible Constructor Bodies           ║");
+        IO.println("║  JEP 513 — Flexible Constructor Bodies           ║");
         IO.println("╚═══════════════════════════════════════════════════╝");
         IO.println();
 
