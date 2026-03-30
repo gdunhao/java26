@@ -46,6 +46,7 @@ mvn compile exec:exec -Dexec.mainClass=<fully.qualified.ClassName>
 | # | JEP | Feature | Demo Class | Description |
 |---|-----|---------|------------|-------------|
 | 1 | [JEP 517](https://openjdk.org/jeps/517) | **HTTP/3 for the HTTP Client API** | [`o.e.standard.Http3Demo`](#1-jep-517--http3-for-the-http-client-api) | `HttpClient` now supports HTTP/3 (QUIC) |
+| 6 | [JEP 500](https://openjdk.org/jeps/500) | **Prepare to Make Final Mean Final** | [`o.e.standard.FinalFieldWarningsDemo`](#6-jep-500--prepare-to-make-final-mean-final) | Runtime warnings when reflection mutates final fields |
 
 ### 🔬 Preview Features (require `--enable-preview`)
 
@@ -180,17 +181,42 @@ The demo covers: element-wise operations, reductions, conditional/masked operati
 
 ---
 
+### 6. JEP 500 — Prepare to Make Final Mean Final
+
+```bash
+java --enable-preview --add-modules jdk.incubator.vector \
+  -cp target/classes org.example.standard.FinalFieldWarningsDemo
+```
+
+**What changed:** JDK 26 now issues runtime **warnings** when code uses reflection (`java.lang.reflect`) to mutate fields declared as `final`. This is the first step toward making `final` truly immutable — in a future JDK, these mutations will be blocked with an `IllegalAccessException`.
+
+```java
+class UserProfile {
+    private final String name = "Alice";
+}
+
+// This now triggers a WARNING in JDK 26:
+Field f = UserProfile.class.getDeclaredField("name");
+f.setAccessible(true);
+f.set(profile, "Bob");  // ⚠️ WARNING: final field was set via reflection
+```
+
+The demo covers: final instance field mutation warnings, final static field warnings, reading final fields (still safe), non-final fields (unaffected), and proper migration alternatives (builders, records, constructor injection).
+
+**Best for:** Understanding migration paths for frameworks (Jackson, Spring, Gson) that mutate final fields via reflection.
+
+---
+
 ## 📝 Non-Codeable JEPs in JDK 26
 
-These JEPs are important but don't have direct demo code:
+These JEPs are important but don't have runnable demo code in this project:
 
-| JEP | Feature | Notes |
-|-----|---------|-------|
-| [JEP 500](https://openjdk.org/jeps/500) | **Prepare to Make Final Mean Final** | Warns at compile time about reflective access to final fields. |
-| [JEP 504](https://openjdk.org/jeps/504) | **Remove the Applet API** | The long-deprecated `java.applet` package is removed. |
-| [JEP 516](https://openjdk.org/jeps/516) | **Ahead-of-Time Object Caching with Any GC** | Extends AOT caching to work with all GC algorithms. |
-| [JEP 522](https://openjdk.org/jeps/522) | **G1 GC: Improve Throughput by Reducing Synchronization** | G1 garbage collector performance improvements. |
-| [JEP 526](https://openjdk.org/jeps/526) | **Stable Values (Second Preview)** | Lazily-initialized constant values; `StableValue` API not yet available in JDK 26 EA. |
+| JEP | Feature | Why Not Codeable |
+|-----|---------|------------------|
+| [JEP 504](https://openjdk.org/jeps/504) | **Remove the Applet API** | The `java.applet` package is removed entirely — there is no API left to call or demonstrate. |
+| [JEP 516](https://openjdk.org/jeps/516) | **Ahead-of-Time Object Caching with Any GC** | Controlled via JVM flags (`-XX:AOTCache`), not Java code. No programmatic API. |
+| [JEP 522](https://openjdk.org/jeps/522) | **G1 GC: Improve Throughput by Reducing Synchronization** | Internal JVM optimization — zero API surface, only observable via benchmarks. |
+| [JEP 526](https://openjdk.org/jeps/526) | **Stable Values (Second Preview)** | `StableValue` API is codeable in principle (real preview API), but **not yet available** in JDK 26 EA builds. Demos will be added once the API ships in a later EA or GA build. |
 
 ---
 
@@ -204,12 +230,19 @@ java26/
     ├── Main.java                              # Original hello-world
     ├── standard/                              # Final/standard features
     │   ├── Http3Demo.java                     # JEP 517
-    │   └── StructuredConcurrencyDemo.java     # JEP 525
+    │   ├── Http3RealWorldExamples.java        # JEP 517 real-world
+    │   ├── FinalFieldWarningsDemo.java        # JEP 500
+    │   ├── FinalFieldWarningsRealWorldExamples.java  # JEP 500 real-world
+    │   ├── StructuredConcurrencyDemo.java     # JEP 525
+    │   └── StructuredConcurrencyRealWorldExamples.java  # JEP 525 real-world
     ├── preview/                               # Preview features
     │   ├── PrimitivePatternsDemo.java         # JEP 530
-    │   └── PemEncodingDemo.java               # JEP 524
+    │   ├── PrimitivePatternsRealWorldExamples.java  # JEP 530 real-world
+    │   ├── PemEncodingDemo.java               # JEP 524
+    │   └── PemEncodingRealWorldExamples.java  # JEP 524 real-world
     └── incubator/                             # Incubator features
-        └── VectorApiDemo.java                 # JEP 529
+        ├── VectorApiDemo.java                 # JEP 529
+        └── VectorApiRealWorldExamples.java    # JEP 529 real-world
 ```
 
 ---
