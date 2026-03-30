@@ -13,11 +13,15 @@ import java.util.HashMap;
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
  * These examples show REAL scenarios where primitive type patterns
- * (JEP 488) replace verbose if-else chains, manual casting, and fragile
+ * (JEP 530) replace verbose if-else chains, manual casting, and fragile
  * range checks with clean, readable, and exhaustive pattern matching.
  *
  * REFERENCES
  * ──────────
+ *   • JEP 530 — Primitive Types in Patterns, instanceof, and switch (Fourth Preview):
+ *       https://openjdk.org/jeps/530
+ *   • JEP 507 — Primitive Types in Patterns, instanceof, and switch (Third Preview):
+ *       https://openjdk.org/jeps/507
  *   • JEP 488 — Primitive Types in Patterns, instanceof, and switch (Second Preview):
  *       https://openjdk.org/jeps/488
  *   • JEP 455 — Primitive Types in Patterns, instanceof, and switch (First Preview):

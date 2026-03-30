@@ -8,7 +8,7 @@ import java.util.*;
 /**
  * ╔══════════════════════════════════════════════════════════════════════════════╗
  * ║  Structured Concurrency — Real-World Use Cases                              ║
- * ║  Practical examples where JEP 499 gives you a real advantage                ║
+ * ║  Practical examples where JEP 525 gives you a real advantage                ║
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
  * These examples show REAL scenarios where StructuredTaskScope replaces
@@ -17,8 +17,8 @@ import java.util.*;
  *
  * REFERENCES
  * ──────────
- *   • JEP 499 — Structured Concurrency:
- *       https://openjdk.org/jeps/499
+ *   • JEP 525 — Structured Concurrency (Sixth Preview):
+ *       https://openjdk.org/jeps/525
  *   • JEP 444 — Virtual Threads:
  *       https://openjdk.org/jeps/444
  *

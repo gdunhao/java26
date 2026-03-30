@@ -4,9 +4,9 @@ import jdk.incubator.vector.*;
 
 /**
  * ╔══════════════════════════════════════════════════════════════════════════════╗
- * ║  JEP 489: Vector API (Ninth Incubator)                                     ║
+ * ║  JEP 529: Vector API (Eleventh Incubator)                                  ║
  * ║  Status: INCUBATOR in JDK 26                                               ║
- * ║  Spec: https://openjdk.org/jeps/489                                        ║
+ * ║  Spec: https://openjdk.org/jeps/529                                        ║
  * ║  Requires: --add-modules jdk.incubator.vector                              ║
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
@@ -70,7 +70,7 @@ public class VectorApiDemo {
 
     public static void main(String[] args) {
         IO.println("╔═══════════════════════════════════════════════════╗");
-        IO.println("║  JEP 489 — Vector API (Incubator)               ║");
+        IO.println("║  JEP 529 — Vector API (Incubator)               ║");
         IO.println("╚═══════════════════════════════════════════════════╝");
         IO.println();
 

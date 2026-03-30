@@ -5,9 +5,9 @@ import java.util.concurrent.ExecutionException;
 
 /**
  * ╔══════════════════════════════════════════════════════════════════════════════╗
- * ║  JEP 499: Structured Concurrency                                           ║
- * ║  Status: FINAL in JDK 26                                                   ║
- * ║  Spec: https://openjdk.org/jeps/499                                        ║
+ * ║  JEP 525: Structured Concurrency (Sixth Preview)                            ║
+ * ║  Status: PREVIEW in JDK 26                                                 ║
+ * ║  Spec: https://openjdk.org/jeps/525                                        ║
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
  * WHAT THIS FEATURE DOES
@@ -29,9 +29,11 @@ import java.util.concurrent.ExecutionException;
  *   scope.join()                         — Waits for all subtasks to complete
  *   subtask.get()                        — Gets the result (or throws)
  *   StructuredTaskScope.Joiner           — Strategy for how to join subtasks:
- *     .awaitAll()                        — Wait for all, fail on any failure
+ *     .awaitAll()                        — Wait for all, regardless of outcome
  *     .awaitAllSuccessfulOrThrow()       — Wait for all, throw on first failure
- *     .anySuccessfulResultOrThrow()      — Return first success, cancel rest
+ *     .allSuccessfulOrThrow()            — Wait for all, return List of results
+ *     .anySuccessfulOrThrow()            — Return first success, cancel rest
+ *     .allUntil(Predicate)              — Wait until predicate matches
  *
  * WHY IT MATTERS
  * ──────────────
@@ -52,7 +54,7 @@ public class StructuredConcurrencyDemo {
 
     public static void main(String[] args) throws Exception {
         IO.println("╔═══════════════════════════════════════════════════╗");
-        IO.println("║  JEP 499 — Structured Concurrency                ║");
+        IO.println("║  JEP 525 — Structured Concurrency (Preview)      ║");
         IO.println("╚═══════════════════════════════════════════════════╝");
         IO.println();
 
